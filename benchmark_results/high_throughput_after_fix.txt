@@ -1,0 +1,11 @@
+goos: darwin
+goarch: arm64
+pkg: throttler/throttler
+cpu: Apple M1 Pro
+BenchmarkHighThroughput
+    throttler_test.go:212: Performed 12703 operations in 5.002049166s
+    throttler_test.go:213: Throughput: 2539.56 ops/second (152373.55 ops/minute)
+    throttler_test.go:216: Warning: Throughput is below target of 500k ops/minute
+BenchmarkHighThroughput-8              1        5014335959 ns/op
+PASS
+ok      throttler/throttler     6.341s
